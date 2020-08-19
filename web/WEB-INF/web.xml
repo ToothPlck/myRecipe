@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>addRecipeServlet</servlet-name>
+        <servlet-class>Controller.addRecipeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addRecipeUserServlet</servlet-name>
+        <servlet-class>Controller.addRecipeUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>homePage</servlet-name>
+        <servlet-class>Controller.homePage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>homePageServlet</servlet-name>
+        <servlet-class>Controller.homePageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addRecipeServlet</servlet-name>
+        <url-pattern>/addRecipeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addRecipeUserServlet</servlet-name>
+        <url-pattern>/addRecipeUserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>homePage</servlet-name>
+        <url-pattern>/homePage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>homePageServlet</servlet-name>
+        <url-pattern>/homePageServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
