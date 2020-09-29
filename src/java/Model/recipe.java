@@ -7,12 +7,12 @@ package Model;
 public class recipe {
 
     int ID;
-    String name, type, des, vegNonveg, time, steps, uploadedBy, status;
+    String name, type, des, vegNonveg, time, steps, uploadedBy, status, imageName;
 
     public recipe() {
     }
 
-    public recipe(int ID, String name, String type, String des, String vegNonveg, String time, String steps, String uploadedBy, String status) {
+    public recipe(int ID, String name, String type, String des, String vegNonveg, String time, String steps, String uploadedBy, String status, String imageName) {
         this.ID = ID;
         this.name = name;
         this.type = type;
@@ -22,7 +22,32 @@ public class recipe {
         this.steps = steps;
         this.uploadedBy = uploadedBy;
         this.status = status;
+        this.imageName = imageName;
     }
+    
+    public recipe(int ID, String name, String type, String des, String vegNonveg, String time, String steps, String uploadedBy, String imageName) {
+        this.ID = ID;
+        this.name = name;
+        this.type = type;
+        this.des = des;
+        this.vegNonveg = vegNonveg;
+        this.time = time;
+        this.steps = steps;
+        this.uploadedBy = uploadedBy;
+        this.imageName = imageName;
+    }
+
+    /*    public recipe(int ID, String name, String type, String des, String vegNonveg, String time, String steps, String uploadedBy, String status) {
+    this.ID = ID;
+    this.name = name;
+    this.type = type;
+    this.des = des;
+    this.vegNonveg = vegNonveg;
+    this.time = time;
+    this.steps = steps;
+    this.uploadedBy = uploadedBy;
+    this.status = status;
+    }*/
 
     public recipe(int ID, String name, String type, String des, String vegNonveg, String time, String steps, String uploadedBy) {
         this.ID = ID;
@@ -105,6 +130,14 @@ public class recipe {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
     }
 
 }

@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 22, 2020, 5:24:13 PM
+    Author     : Ayeshmi
+*/
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+ background-image: url("top-view-photo-of-food-dessert-1099680.jpg");
+
+
+  min-height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align:center;
+  /*margin:100px 0px;*/
+    margin-left: auto;
+  margin-right: auto;
+}
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+h1{
+     text-shadow: 2px 2px #FF0000;
+color:white;
+   text-align: center;
+   font-family: cursive;
+   font-size:50px;
+}
+h2{
+     text-shadow: 2px 2px #FF0000;
+color:white;
+   text-align: center;
+   font-family: cursive;
+   font-size:50px;
+}
+.box3{
+  background-color:lightgrey;
+font-size:20px;
+  width: 1270px;
+ height:400px;
+  padding: 20px;
+  margin: 20px;
+}
+

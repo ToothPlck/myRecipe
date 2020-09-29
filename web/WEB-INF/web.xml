@@ -16,6 +16,26 @@
         <servlet-name>homePageServlet</servlet-name>
         <servlet-class>Controller.homePageServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>adminHomePageServlet</servlet-name>
+        <servlet-class>Controller.adminHomePageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>userHomePageServlet</servlet-name>
+        <servlet-class>Controller.userHomePageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>Controller.logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>recipeAcceptionServlet</servlet-name>
+        <servlet-class>Controller.recipeAcceptionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>adminsHomePage</servlet-name>
+        <servlet-class>Controller.adminsHomePage</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>addRecipeServlet</servlet-name>
         <url-pattern>/addRecipeServlet</url-pattern>
@@ -31,6 +51,26 @@
     <servlet-mapping>
         <servlet-name>homePageServlet</servlet-name>
         <url-pattern>/homePageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adminHomePageServlet</servlet-name>
+        <url-pattern>/adminHomePageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>userHomePageServlet</servlet-name>
+        <url-pattern>/userHomePageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>recipeAcceptionServlet</servlet-name>
+        <url-pattern>/recipeAcceptionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adminsHomePage</servlet-name>
+        <url-pattern>/adminsHomePage</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

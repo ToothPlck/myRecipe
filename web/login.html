@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Log In</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="CSS/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="CSS/login.css" />
+    </head>
+    <body>
+        <header id="header">
+            <div>
+                <h1>My Recipes</h1>
+            </div>
+        </header>
+
+        <section class="topnav">
+            <a href="homePageServlet">Home</a>
+            <a href="login.html">Submit a recipe</a>
+            <a class="active" href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="contactPage.jsp">Contact Us</a>
+        </section>
+
+        <div class="container">
+            <div class="head">
+                <h2><a class="headingButton" href="login.html">Login</a></h2>
+            </div>
+            <form class="form" action="LoginServlet" method="post">
+                <div>
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Enter email" required />
+                </div>
+                <br>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter password" required />
+                </div>
+                <br>
+                <div>
+                    <input class="loginButton" type="submit" value="Login" />
+                </div>
+            </form>
+            <p class="ref">Don't have an account? <a class="aRef" href="register.html">Register</a></p>
+
+        </div>
+        <footer class="footer">
+            <p class="footerPara">©2020 All rights Reserved</p>
+            <p class="recipes">My Recipes</p>
+        </footer>
+    </body>
+</html>

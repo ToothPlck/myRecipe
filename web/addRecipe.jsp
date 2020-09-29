@@ -10,29 +10,40 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="CSS/normalize.css" />
-        <link type="text/css" rel="stylesheet" href="CSS/addRecipes.css" />
+        <link type="text/css" rel="stylesheet" href="CSS/addRecipe.css" />
         <title>Submit recipe</title>
     </head>
     <body>
-        <header>
-            <div class="header">
-                <h1 class="head">Prins and the rest</h1>
+        
+        <header id="header">
+            <div>
+                <h1>My Recipes</h1>
             </div>
         </header>
+        
+        <section class="topnav">
+            <a href="homePageServlet">Home</a>
+            <a href="addRecipe.jsp">Submit a recipe</a>
+            <a href="viewContactDetails.jsp">Respond users</a>
+            <a class="active" href="viewRegUsers.jsp">Handle users</a>
+        </section>
+        
         <div class="container">
-            <div class="pageName">
+            
+            <div class="head">
                 <h2><a class="headingButton" href="addRecipe.jsp">Submit recipe</a></h2>
             </div>
-            <form method="post" action="addRecipeServlet"> <!--enctype="multipart/form-data".......for some reason does not let any data to get added to the database--> 
+            
+            <form class="form" method="post" action="addRecipeServlet" enctype="multipart/form-data">
                 <div class="imageHolder">
-                    <img src="images/placeholder-image.png" onclick="triggerClick()" id="imageDisplay">
+                    <img src="images/placeholder-image.png" width="250" height="200" onclick="triggerClick()" id="imageDisplay">
                     <input type="file" name="recipeImage" onchange="displayImage(this)" id="recipeImage" style="display: none;">
                 </div>
                 <br>
                 <div class="recipeInfoHolder">
                     <div>
                         <label>Enter recipe name:</label>
-                        <input type="text" name="recipeName" required/>
+                        <input type="text" name="recipeName" placeholder="Enter recipe name" required/>
                     </div>
                     <br>
                     <div>
@@ -57,10 +68,11 @@
                     <br>
                     <div>
                         <label>Enter short description:</label>
-                        <textarea name="shortDescription" rows="1" required></textarea>
+                        <textarea name="shortDescription" rows="1" placeholder="Enter a short description of the recipe" required></textarea>
                     </div>
                     <br>
                     <div>
+                        <label>Select type:</label>
                         <select class="vegNonveg" name="vegNonVeg">
                             <option value="Non-veg" selected>Non-veg</option>
                             <option value="veg">Veg</option>
@@ -116,7 +128,7 @@
                     <br>
                     <div>
                         <label>Methods and steps to prepare:</label>
-                        <textarea name="steps" rows="1" required></textarea>
+                        <textarea name="steps" rows="1" placeholder="Enter steps of the preparation" required></textarea>
                     </div>
                     <br>
                     <div>
@@ -124,11 +136,12 @@
                     </div>
                 </div>
             </form>
+            
         </div>
-        <br>
+        
         <footer class="footer">
             <p class="footerPara">©2020 All rights Reserved</p>
-            <p class="prins">Prins</p>
+            <p class="recipes">My Recipes</p>
         </footer>
 
         <script>
